@@ -1,0 +1,17 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base:3.18"
+  amd64: "ghcr.io/home-assistant/amd64-base:3.18"
+  armhf: "ghcr.io/home-assistant/armhf-base:3.18"
+  armv7: "ghcr.io/home-assistant/armv7-base:3.18"
+  i386: "ghcr.io/home-assistant/i386-base:3.18"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Pixlet Pusher"
+  org.opencontainers.image.description: "Allows Homeassistant to push applets to Tidbyt devices using Pixlet."
+  org.opencontainers.image.source: "https://github.com/tamwahba/pixlet-pusher"
+  org.opencontainers.image.licenses: "GNU General Public License v3.0 only"
+args:
+  TIDBYT_BRANCH: "v0.28.3"
+codenotary:
+  base_image: notary@home-assistant.io
+  signer: tamwahba@hotmail.com
