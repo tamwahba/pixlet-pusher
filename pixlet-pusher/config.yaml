@@ -2,7 +2,7 @@ name: "Pixlet Pusher"
 description: "Allows Home Assistant to push applets to Tidbyt devices using Pixlet"
 url: "https://github.com/tamwahba/pixlet-pusher/tree/main/pixlet-pusher"
 image: "ghcr.io/tamwahba/{arch}-addon-pixlet-pusher"
-version: "0.0.0"
+version: "1.0.0"
 slug: "pixlet_pusher"
 init: false
 arch:
